@@ -103,7 +103,7 @@
   align-items: center;
   color: #FFFFFF;
   flex-direction: column;
-  padding: 10px;
+  padding: 20px;
   gap: 50px;
 }
 
@@ -117,7 +117,7 @@
 }
 
 #Footer .flogo img{
-  width: 400px;
+  width: 280px;
 }
 
 #Footer .tcontent{

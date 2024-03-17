@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
         </Box>
         <Divider />
-        <div className='endF' style={{ background: 'GREY', fontSize: '20px', padding: '5px', textAlign: 'center', color: 'white' }}>جميع الحقوق محفوظة صيانة سامسونج © 2018</div>
+        <div className='endF' style={{height:"100%", width: '100%', background: 'GREY', fontSize: '20px', padding: '5px', textAlign: 'center', color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>جميع الحقوق محفوظة صيانة سامسونج © 2018</div>
         </>
     )
 }
