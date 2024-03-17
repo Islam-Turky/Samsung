@@ -3,6 +3,21 @@
   src: url(/Cairo-VariableFont_slnt,wght.ttf);
 }
 
+
+.mm{
+  text-align: right;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.divider{
+  height: 7px;
+  background-color: rgb(0, 110, 255);
+  margin: 10px auto;
+  width: 50%;
+}
+
 .mainContainer{
   margin: 10px;
   overflow: hidden;
@@ -51,7 +66,7 @@
 }
 
 #who{
-  height: 60vh;
+  /* height: 100vh; */
   padding: 10px;
   margin: 0 auto;
 }
@@ -61,8 +76,7 @@
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  height: 100%;
-  padding: 10px;
+  gap: 50px;
 }
 
 .content .element{
@@ -71,42 +85,85 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.content .element div{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
+  gap: 15px;
 }
 
-.content .element div .icon {
+.content .element .icon {
   color: #111111;
   font-size: 40px;
+  color: rgb(30, 127, 255);
 }
-
 #Footer{
   width: 100%;
   text-align: center;
-  height: 10vh;
+  height: 100%;
   background-color: GREY;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
+  flex-direction: column;
+  padding: 10px;
+  gap: 50px;
 }
 
+#Footer .flogo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#Footer .flogo img{
+  width: 400px;
+}
+
+#Footer .tcontent{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  gap: 20px;
+}
+
+#Footer .tcontent .it .lis{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 10px;
+  padding: 10px;
+}
+
+#Footer .tcontent .it .lis a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#Footer .tcontent .it .lis a:hover{
+  color: blue;
+}
+
+#Footer .tcontent .it .list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/*  */
 .iconContact{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
   height: 10vh;
-  /* background-color: #111111; */
 }
 
 .iconContact a img{
-  /* display: inline-block; */
   width: 100px;
   height: 100px;
 }
@@ -185,4 +242,17 @@
 .explainbrand img{
   height: auto;
   width: 100%;
+}
+/*  */
+.pcard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pcard img{
+  width: 100%;
+  height: auto;
 }
