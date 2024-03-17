@@ -96,7 +96,7 @@ return (
                 </svg>
             </a>
         </Typography>
-            <Typography variant='h4' sx={{ color: 'white', width: '110%', position: 'fixed', textAlign: 'center' }} >مركز صيانة سامسونج</Typography>
+            <Typography variant='h5' sx={{ color: 'white', width: '110%', position: 'fixed', textAlign: 'center' }} >مركز صيانة سامسونج</Typography>
         <IconButton
             aria-label="open drawer"
             edge="end"
