@@ -5,6 +5,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Toast from 'react-bootstrap/Toast';
+import { FaPhone } from "react-icons/fa6";
 // 
 import img1 from './assets/service-maintenance-worker-repairing.jpg'
 import img2 from './assets/high-angle-man-working-as-plumber.jpg'
@@ -21,7 +27,9 @@ import et from './assets/etisalat-seeklogo.svg'
 import mob from './assets/Orange_Egypt-Logo.wine.svg'
 
 function App() {
+  const [showA, setShowA] = useState(false);
 
+  const toggleShowA = () => setShowA(!showA);
   return (
     <>
         <Navbar expand="lg" bg="white" className='d-flex justify-content-evenly position-fixed z-3 w-100 top-0' data-bs-theme="dark">
@@ -140,17 +148,26 @@ function App() {
         </ListGroup>
         <h1 className='text-end'>أرقامنا</h1>
         <div className='d-flex justify-content-center align-items-center align-content-center gap-3 p-2 position-fixed bottom-0 end-0 flex-column p-5'>
-          <span>اتصل الأن</span>
-          <a className='rounded'  href="tel:01002145007"><img src={vod} alt="vodafone" width={100} /></a>
-          {/* <a href="tel:01220088558"><img src={mob} alt="orange" width={100} /></a> */}
-          {/* <a href="tel:01118781896"><img src={et} alt="Etisalat" width={100} /></a> */}
+          <Row>
+            <Col md={15}>
+            <Button style={{  background: 'green' }} onClick={toggleShowA} className='rounded-circle'>
+            <FaPhone fontSize={40}/>
+            </Button>
+            <Toast show={showA} onClose={toggleShowA}>
+              <Toast.Body className=' d-flex justify-content-evenly align-content-center align-items-center'>
+                          <a className='rounded'  href="tel:01002145007"><img src={vod} alt="vodafone" width={80} /></a>
+                          <a className='rounded'  href="tel:01220088558"><img src={mob} alt="orange" width={150} /></a>
+                          <a className='rounded'  href="tel:01118781896"><img src={et} alt="etisalat" width={100} /></a>
+              </Toast.Body>
+            </Toast>
+          </Col>
+        </Row>
           
         </div>
         <div className='d-flex justify-content-center align-items-center align-content-center gap-3 p-2'>
           <a className='btn btn-outline-primary' href="tel:01002145007">01002145007</a>
           <a className='btn btn-outline-primary' href="tel:01220088558">01220088558</a>
           <a className='btn btn-outline-primary' href="tel:01118781896">01118781896</a>
-          
         </div>
       </Container>
     </Container>
