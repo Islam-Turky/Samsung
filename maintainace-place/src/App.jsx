@@ -5,6 +5,20 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+// 
+import img1 from './assets/service-maintenance-worker-repairing.jpg'
+import img2 from './assets/high-angle-man-working-as-plumber.jpg'
+import img3 from './assets/young-man-working-as-electrician-exposing-back-fridge-check-repair-it.jpg'
+// 
+import img4 from './assets/6.jpg'
+import img5 from './assets/pc-with-text.webp'
+import img6 from './assets/fridge.jpeg'
+import img7 from './assets/b.jpg'
+import img8 from './assets/f.jpeg'
+import img9 from './assets/w.jpg'
+import vod from './assets/Vodafone_2017_logo.svg.png'
+import mob from './assets/Orange_logo.svg.png'
+import et from './assets/Etisalat_eand_Logo_EN.svg.png'
 
 function App() {
 
@@ -27,45 +41,45 @@ function App() {
     <Container id='home'>
     <Carousel autoPlay className='mt-5' >
         <div>
-            <img src="src/assets/service-maintenance-worker-repairing.jpg" />
+            <img src={img1} />
             <p className="legend">صيانة بوتاجازات</p>
         </div>
         <div>
-            <img src="src/assets/high-angle-man-working-as-plumber.jpg" />
+            <img src={img2} />
             <p className="legend">صيانة غسالات</p>
         </div>
         <div>
-            <img src="src/assets/young-man-working-as-electrician-exposing-back-fridge-check-repair-it.jpg" />
+            <img src={img3} />
             <p className="legend">صيانة ثلاجات</p>
         </div>
     </Carousel>
-
+{/* sdsd */}
     </Container>
     <Container id='who'>
     <h1 className='text-center p-4 bg-primary text-light rounded'>من نحن</h1>
       <div className='text-end fs-4 p-4'>نحن مركز صيانة سامسونج لصيانة جميع أعطال الأجهزه المنزلية         يقدم مركز خدمة صيانة سامسونج صيانة متكاملة من افضل مراكز الصيانة الموجودة في مصر حاليا حيث أنها تقدم صيانة متميزة عالية من الدقة في جميع أجهزة سامسونج ضمن كفاءة عالية من الخبرة والدقة والتميز في صيانات الثلاجات كما نعمل علي بذل الجهد من أجل راحة العميل كما يقدم فريق المهندسين لدينا صيانة لكافة الاعطال الموجودة في الجهاز من اعطال تسريب المياة وتسريب الغاز وكثيرا من الاعطال الاخري كما يوجد لدينا استبدال قطع الغيار بأخري اصلية ومن بلد منشأة ويوجد لدينا ضمان علي قطع الغيار ، كما تقدم صيانة سامسونج فريق دعم متكامل لإصلاح كافة اعطال أجهزة سامسونج المنزلية ، وكما يوجد لدينا دورات شهرية مجانية من أجل راحة عملائنا ، كما نقدم ضمان عام كامل علي كافة الإصلاحات كما يوجد لدينا أسطول متحرك للتواصل مع عملائنا في اسرع وقت ممكن
       </div>
     <h1 className='text-end'>مركز صيانة سامسونج</h1>
-    <Card.Img variant="top" src="src/assets/6.jpg" />
+    <Card.Img variant="top" src={img4} />
       <div className='text-end fs-4 p-4'>
       تعد واحداً من أكثر التوكيلات نجاحاً ونموّاً في قطاع الأجهزة الكهربائية المنزلية وصيانتها في العالم ومصر ، وتحرص كريازى كرائد في مجال بيع وصيانة الأجهزة الكهربائية المنزلية المعاصرة بالاهتمام بالعملاء ، والانتماء والحرص على الأصالة.وذلك عن طريق فهم عملائنا واحتياجاتهم، وتقديم الحلول المثلى والتجارب الجديدة لهم من خلال الابتكار المستمر، الذي يساعدهم على الوصول إلى نمط حياةٍ أفضل فى مختلف قطاعات المنزل العصرى من بيع و صيانة الأجهزة الكهربائية كالغسالات والثلاجات والديب فريزر والمجففات والميكرويف.
 
 إضافة إلى ذلك، نحن نسعى في كريازى للوصول إلى عملاءٍ جدد، آخذين بعين الاعتبارحبهم للاكتشاف والقيام بالأنشطة الجديدة المختلفة وسعيهم الدائم إلى حياةٍ أفضل, ولذلك فقد قمنا بتطوير علامتنا التجارية تدريجياً وبشكل مستمر وذلك فقد قمنا بطرح بموقع صيانة كريازى جميع المعلومات المتعلقة بمركز صيانة كريازى ، حيث يعتبر مركز صيانة كريازى من أفضل المراكز التي تقدم خدمات صيانة لجميع منتجات شركة كريازى ، فمن خلال خدمة عملاء كريازى ؛ يمكنك الحصول على أفضل خدمه اصلاح بمصر ، فتوكيل صيانة كريازى يضم أفضل الخبراء والمتخصصين في صيانة جميع منتجات شركة كريازى حصرياً ، والمركز معتمد وحاصل على توكيل صيانة من شركة كريازى الرئيسية ، وحرصا على تقديم أفضل الخدمات وحرصا على العملاء يقدم لهم المركز أفضل الخبرات في الصيانة والدعم الفني والكفاءة العالية وفي نفس الوقت مع أسعار مناسبة لجميع العملاء
       </div>
     <h1 className='text-end'>صيانة ثلاجات سامسونج</h1>
-    <Card.Img variant="top" src="src/assets/pc-with-text.webp" />
+    <Card.Img variant="top" src={img5} />
 
       <div className='text-end fs-4 p-4'>
       تقدم كريازى قسم خاص لصيانة ثلاجات وديب فريزرات كريازى الذى تعد من أفضل الأنواع المتواجدة فى العالم ومصر. حيث يقدم فريق المهندسين المتميز لديها بصيانة كافة الأعطال من اعطال الترموستات, اعطال تسريب المياه وتسريب الغاز من الثلاجة والديب فريزر, اعطال تكوين الثلج فى الفريزر واعطال ماتور الثلاجة والأعطال فى الأجزاء المختلفة للثلاجة والديب فريزر وتغيير قطع الغياربأخرى أصلية من بلد المنشأ أذا لزم الأمر. كما تقدم صيانة كريازى خدمة الصيانة المنزلية لجميع عملاء كريازى ( غسالات ملابس – غسالة اطباق – ثلاجات – ديب فريزر – ميكروويف – مجفف ملابس ) وذلك عن طريق فروعنا المتخصصة لخدمة عملائنا بجميع محافظات الجمهورية طوال ايام الاسبوع .كما توفر خدمة عملاء كريازى فريق من افراد الدعم الفني جاهز دائما لتلقي بلاغات الاعطال والصيانة والاسئلة المتكررة بطريقة تشغيل الجهاز وايضا اسعار قطع الغيار وطريقة ارشاد العميل لاصلاح جهازه بنفسه في حالة الاعطال البسيطة التي لا تستدعي القلق وتذكر دائما ان فريق خدمة عملاء كريازى مستعد دائما لخدمتك في جميع ايام الاسبوع وطوال ايام السنة على ارقام شركة كريازى الساخنة
       </div>
     <h1 className='text-end'>صيانة غسالات سامسونج</h1>
-    <Card.Img variant="top" src="src/assets/fridge.jpeg" />
+    <Card.Img variant="top" src={img6} />
 
       <div className='text-end fs-4 p-4'>
       تتميز كريازى في عالم الغسالات بابتكارات خاصة ومبهرة، كما تقدم خدماتها لشرائح واسعة من العملاء، سواء من خلال تصميماتها التي تلبي احتياجات مختلفة من حيث المساحة والجمالية، أو من خلال السعات الكبيرة والمتوسطة والصغيرة، كما تقدم خدمة صيانة متميزة لجميع منتاجاتها من الغسالات الأتوماتيك و الفوق أتوماتيك والمجففات ومعالجة جميع الأعطال بأسرع وقت ممكن من أجل راحة عملائها . لدي مركز صيانة كريازى من هم علي درجة عاليه من المهارة من مهندسين وفنيين ويدركوا جميع التفاصيل الفنية ومدربين من قبل التوكيل الرسمى للقيام بجميع اعمال الصيانه مع تقديم ضمان متجدد علي جميع الاعطال بالاضافة الى ان توكيل كريازى يضمن لكم حصولكم علي صيانه مجانية في حالة حدوث اي من الاعطال الغير متوقعة نتيجة الصيانة ومعنا سوف تكون اجهزتكم في امان وسوف تحصل علي صيانه وتغيير لاي من قطع الغيار عند الضرورة اتصل بنا على رقم الخط الساخن.
       </div>
     <h1 className='text-end'>صيانة بوتاجازات سامسونج</h1>
-    <Card.Img variant="top" src="src/assets/b.jpg" />
+    <Card.Img variant="top" src={img7} />
 
       <div className='text-end fs-4 p-4'>
       تتميز كريازى في عالم الغسالات بابتكارات خاصة ومبهرة، كما تقدم خدماتها لشرائح واسعة من العملاء، سواء من خلال تصميماتها التي تلبي احتياجات مختلفة من حيث المساحة والجمالية، أو من خلال السعات الكبيرة والمتوسطة والصغيرة، كما تقدم خدمة صيانة متميزة لجميع منتاجاتها من الغسالات الأتوماتيك و الفوق أتوماتيك والمجففات ومعالجة جميع الأعطال بأسرع وقت ممكن من أجل راحة عملائها . لدي مركز صيانة كريازى من هم علي درجة عاليه من المهارة من مهندسين وفنيين ويدركوا جميع التفاصيل الفنية ومدربين من قبل التوكيل الرسمى للقيام بجميع اعمال الصيانه مع تقديم ضمان متجدد علي جميع الاعطال بالاضافة الى ان توكيل كريازى يضمن لكم حصولكم علي صيانه مجانية في حالة حدوث اي من الاعطال الغير متوقعة نتيجة الصيانة ومعنا سوف تكون اجهزتكم في امان وسوف تحصل علي صيانه وتغيير لاي من قطع الغيار عند الضرورة اتصل بنا على رقم الخط الساخن.
@@ -77,7 +91,7 @@ function App() {
     </Container>
     <Container className='d-flex justify-content-evenly align-items-center align-content-center flex-wrap gap-3'>
     <Card style={{ width: '26rem' }}>
-      <Card.Img variant="top" src="src/assets/b.jpg" />
+      <Card.Img variant="top" src={img7} />
       <Card.Body>
         <Card.Title className='text-end'>صيانة بوتاجاز سامسونج</Card.Title>
         <Card.Text className='text-end'>
@@ -89,7 +103,7 @@ function App() {
       </Card.Body>
     </Card>
     <Card style={{ width: '26rem' }}>
-      <Card.Img variant="top" src="src/assets/f.jpeg" />
+      <Card.Img variant="top" src={img8} />
       <Card.Body>
         <Card.Title className='text-end'>صيانة ثلاجة سامسونج</Card.Title>
         <Card.Text className='text-end'>
@@ -101,7 +115,7 @@ function App() {
       </Card.Body>
     </Card>
     <Card style={{ width: '26rem' }}>
-      <Card.Img variant="top" src="src/assets/w.jpg" />
+      <Card.Img variant="top" src={img9} />
       <Card.Body>
         <Card.Title className='text-end'>صيانة عساله سامسونج</Card.Title>
         <Card.Text className='text-end'>
@@ -126,9 +140,9 @@ function App() {
         </ListGroup>
         <h1 className='text-end'>أرقامنا</h1>
         <div className='d-flex justify-content-center align-items-center align-content-center gap-3 p-2 position-fixed bottom-0 end-0 flex-column p-5'>
-          <a href="tel:01002145007"><img src="src/assets/Vodafone_2017_logo.svg.png" alt="vodafone" width={100} /></a>
-          <a href="tel:01220088558"><img src="src/assets/Orange_logo.svg.png" alt="orange" width={100} /></a>
-          <a href="tel:01118781896"><img src="src/assets/Etisalat_eand_Logo_EN.svg.png" alt="Etisalat" width={100} /></a>
+          <a href="tel:01002145007"><img src={vod} alt="vodafone" width={100} /></a>
+          <a href="tel:01220088558"><img src={mob} alt="orange" width={100} /></a>
+          <a href="tel:01118781896"><img src={et} alt="Etisalat" width={100} /></a>
           
         </div>
         <div className='d-flex justify-content-center align-items-center align-content-center gap-3 p-2'>
