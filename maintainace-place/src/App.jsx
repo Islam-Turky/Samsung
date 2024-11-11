@@ -34,7 +34,7 @@ import { BiBox } from 'react-icons/bi';
 
 const Loading = () => (
   <div className="loading d-flex justify-content-center align-content-center align-items-center vh-100">
-    <img src={loadingSpinner} width={500} height={500} alt="logo" className='loading-logo'/>
+    <img src={loadingSpinner} width={200} height={200} alt="logo" className='loading-logo'/>
   </div>
 );
 
