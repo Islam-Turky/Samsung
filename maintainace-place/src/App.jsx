@@ -158,7 +158,7 @@ function App() {
           <h6 className='text-center text-white p-2 bg-primary' style={{ borderRadius: '6px' }}>الاستجابة السريعة والدعم</h6>
           <li>أسطول متحرك للتواصل مع العملاء بسرعة.</li>
           <li>خدمات صيانة موثوقة وفعالة في جميع أنحاء البلاد.</li>
-          <li>تواصل معنا: 01119711606</li>
+          <li>تواصل معنا: 01220088558</li>
           <br />
         </ul>
         </Card.Text>
