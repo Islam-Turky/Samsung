@@ -84,8 +84,8 @@ function App() {
     </div>
 
     <Container id='who' className='mt-4'>
+    <h1 className='text-center p-5 text-primary'>مرحبا بكم في مركز صيانة سامسونج</h1>
     <h1 className='text-center p-4 bg-primary text-light rounded'>من نحن</h1>
-      <h1 className='text-center'>مرحبا بكم في مركز صيانة سامسونج</h1>
       <div className='text-end fs-4 p-4' dir='rtl'>نحن رواد في بيع وصيانة الأجهزة الكهربائية. نقدم خدمات صيانة عالية الجودة لجميع أجهزة سامسونج المنزلية مع فريق متخصص وقطع غيار أصلية. ضمان لمدة عام على جميع الإصلاحات واستجابة سريعة من خلال أسطول متحرك. اتصل بنا الآن.</div>
     <h1 className='text-end'>صيانة ثلاجات سامسونج</h1>
     <Card.Img variant="top" src={img5} />
