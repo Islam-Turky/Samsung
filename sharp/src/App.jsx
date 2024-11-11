@@ -7,6 +7,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
+// import { Carousel } from 'react-responsive-carousel';
 import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 import { FaPhone } from "react-icons/fa6";
