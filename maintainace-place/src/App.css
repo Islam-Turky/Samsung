@@ -2,3 +2,16 @@
   padding: 2em;
 }
 
+/* Add this CSS to your stylesheet */
+.loading-logo {
+  animation: fadeIn 1.2s ease-in-out infinite ; /* Animation for fading in and out */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    opacity: 1; /* End fully opaque */
+  }
+}

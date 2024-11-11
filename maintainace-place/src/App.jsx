@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -27,14 +27,33 @@ import img9 from './assets/w.jpg'
 import vod from './assets/143859_vodafone_icon.png'
 import et from './assets/etisalat-seeklogo.svg'
 import mob from './assets/Orange_Egypt-Logo.wine.svg'
+import loadingSpinner from "./assets/samsung-seeklogo.svg"
+import "./App.css"
 import { BiBox } from 'react-icons/bi';
+
+
+const Loading = () => (
+  <div className="loading d-flex justify-content-center align-content-center align-items-center vh-100">
+    <img src={loadingSpinner} width={500} height={500} alt="logo" className='loading-logo'/>
+  </div>
+);
 
 function App() {
   const [showA, setShowA] = useState(false);
+  const [loading, setLoading] = useState(true); // Add loading state
+
 
   const toggleShowA = () => setShowA(!showA);
+  useEffect(() => {
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setLoading(false); // Set loading to false after 2 seconds
+    }, 2000);
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
   return (
     <>
+    {loading ? (<Loading />) : (<>
         <Navbar expand="lg" bg="white" className='d-flex justify-content-evenly position-fixed z-3 w-100 top-0' data-bs-theme="dark">
         <Nav dir='rtl'>
           <Nav.Link className='text-dark fw-bold' href="#service">الدعم</Nav.Link>
@@ -49,7 +68,7 @@ function App() {
           <img src="/samsung.svg" loading='lazy' alt="logo" width={150} height={50} />
         </Navbar.Brand>
         </Navbar>
-    {/* < id='home'> */}
+    // {/* < id='home'> */}
     <div id='home'>
     <Carousel>
         <Carousel.Item>
@@ -63,8 +82,8 @@ function App() {
         </Carousel.Item>
     </Carousel>
     </div>
-{/* sdsd */}
-    {/* </> */}
+// {/* sdsd */}
+    // {/* </> */}
     <Container id='who' className='mt-4'>
     <h1 className='text-center p-4 bg-primary text-light rounded'>من نحن</h1>
       <h1 className='text-center'>مرحبا بكم في مركز صيانة سامسونج</h1>
@@ -75,13 +94,6 @@ function App() {
 خدمة عملاء متميزة نقدم دورات شهرية مجانية وضمان لمدة عام على كافة الإصلاحات.
 استجابة سريعة أسطول متحرك للتواصل مع العملاء بأسرع وقت ممكن.
 اتصل بنا الآن للحصول على أفضل خدمة صيانة 01119711606</div>
-    {/* <h1 className='text-end'>مركز صيانة سامسونج</h1>
-    <Card.Img variant="top" src={img4} />
-      <div className='text-end fs-4 p-4'>
-      تعد واحداً من أكثر التوكيلات نجاحاً ونموّاً في قطاع الأجهزة الكهربائية المنزلية وصيانتها في العالم ومصر ، وتحرص سامسونج كرائد في مجال بيع وصيانة الأجهزة الكهربائية المنزلية المعاصرة بالاهتمام بالعملاء ، والانتماء والحرص على الأصالة.وذلك عن طريق فهم عملائنا واحتياجاتهم، وتقديم الحلول المثلى والتجارب الجديدة لهم من خلال الابتكار المستمر، الذي يساعدهم على الوصول إلى نمط حياةٍ أفضل فى مختلف قطاعات المنزل العصرى من بيع و صيانة الأجهزة الكهربائية كالغسالات والثلاجات والديب فريزر والمجففات والميكرويف.
-
-إضافة إلى ذلك، نحن نسعى في سامسونج للوصول إلى عملاءٍ جدد، آخذين بعين الاعتبارحبهم للاكتشاف والقيام بالأنشطة الجديدة المختلفة وسعيهم الدائم إلى حياةٍ أفضل, ولذلك فقد قمنا بتطوير علامتنا التجارية تدريجياً وبشكل مستمر وذلك فقد قمنا بطرح بموقع صيانة سامسونج جميع المعلومات المتعلقة بمركز صيانة سامسونج ، حيث يعتبر مركز صيانة سامسونج من أفضل المراكز التي تقدم خدمات صيانة لجميع منتجات شركة سامسونج ، فمن خلال خدمة عملاء سامسونج ؛ يمكنك الحصول على أفضل خدمه اصلاح بمصر ، فتوكيل صيانة سامسونج يضم أفضل الخبراء والمتخصصين في صيانة جميع منتجات شركة سامسونج حصرياً ، والمركز معتمد وحاصل على توكيل صيانة من شركة سامسونج الرئيسية ، وحرصا على تقديم أفضل الخدمات وحرصا على العملاء يقدم لهم المركز أفضل الخبرات في الصيانة والدعم الفني والكفاءة العالية وفي نفس الوقت مع أسعار مناسبة لجميع العملاء
-      </div> */}
     <h1 className='text-end'>صيانة ثلاجات سامسونج</h1>
     <Card.Img variant="top" src={img5} />
 
@@ -202,6 +214,7 @@ function App() {
     <div className='bg-primary text-white p-5 text-center'>
     هام جدا لجميع زوار موقعنا برجاء العلم اننا نقوم بصيانة جميع ماركات الاجهزة المنزلية الكهربائية ولا نتبع اي توكيلات تجارية او شركات مصنعة ولا ندعي ذلك وجميع ما تم ذكره في هذا الموقع من كلمات او عبارات مثل توكيل أو مركز أو خدمة عملاء أو شركة او وكيل معتمد او رسمي ما هي إلا كلمات دلالية لمحرك البحث لمساعدتكم في الوصول الينا .. وهذا إخلاء مسؤولية منا تجاه زوار الموقع وحرصا على عدم خداعكم .. شكرا لتفهمكم
     </div>
+    </>)}
     </>
   )
 }
