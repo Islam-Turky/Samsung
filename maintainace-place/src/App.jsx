@@ -86,7 +86,7 @@ function App() {
     <Container id='who' className='mt-4'>
     <h1 className='text-center p-4 bg-primary text-light rounded'>من نحن</h1>
       <h1 className='text-center'>مرحبا بكم في مركز صيانة سامسونج</h1>
-      <div className='text-end fs-4 p-4' dir='rtl'>نحن رواد في بيع وصيانة الأجهزة الكهربائية. نقدم خدمات صيانة عالية الجودة لجميع أجهزة شارب المنزلية مع فريق متخصص وقطع غيار أصلية. ضمان لمدة عام على جميع الإصلاحات واستجابة سريعة من خلال أسطول متحرك. اتصل بنا الآن.</div>
+      <div className='text-end fs-4 p-4' dir='rtl'>نحن رواد في بيع وصيانة الأجهزة الكهربائية. نقدم خدمات صيانة عالية الجودة لجميع أجهزة سامسونج المنزلية مع فريق متخصص وقطع غيار أصلية. ضمان لمدة عام على جميع الإصلاحات واستجابة سريعة من خلال أسطول متحرك. اتصل بنا الآن.</div>
     <h1 className='text-end'>صيانة ثلاجات سامسونج</h1>
     <Card.Img variant="top" src={img5} />
 
@@ -117,8 +117,8 @@ function App() {
         <Card.Text className='text-end'>
         <ul dir='rtl'>
           <br />
-          <h6 className='text-center text-white p-2 bg-primary' style={{ borderRadius: '6px' }}>خدمات صيانة شارب المتكاملة</h6>
-          <li>تقديم صيانة متميزة عالية الجودة لجميع أجهزة شارب.</li>
+          <h6 className='text-center text-white p-2 bg-primary' style={{ borderRadius: '6px' }}>خدمات صيانة سامسونج المتكاملة</h6>
+          <li>تقديم صيانة متميزة عالية الجودة لجميع أجهزة سامسونج.</li>
           <li>استبدال قطع الغيار بأخرى أصلية وضمان عليها.</li>
           <li>دورات شهرية مجانية وضمان عام كامل.</li>
           <br />
