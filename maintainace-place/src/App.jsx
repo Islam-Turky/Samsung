@@ -197,7 +197,7 @@ function App() {
         </Row>
           
         </div>
-        <div className='d-flex justify-content-center align-items-center align-content-center gap-3 p-2'>
+        <div className='d-flex justify-content-center align-items-center align-content-center gap-2 p-2'>
           <a className='btn btn-outline-primary' href="tel:01002145007">01002145007</a>
           <a className='btn btn-outline-primary' href="tel:01220088558">01220088558</a>
           <a className='btn btn-outline-primary' href="tel:01118781896">01118781896</a>
