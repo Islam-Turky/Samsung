@@ -82,8 +82,7 @@ function App() {
         </Carousel.Item>
     </Carousel>
     </div>
-// {/* sdsd */}
-    // {/* </> */}
+
     <Container id='who' className='mt-4'>
     <h1 className='text-center p-4 bg-primary text-light rounded'>من نحن</h1>
       <h1 className='text-center'>مرحبا بكم في مركز صيانة سامسونج</h1>
