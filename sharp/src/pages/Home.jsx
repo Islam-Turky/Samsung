@@ -113,11 +113,11 @@ const Home = () => {
         <Container className='p-5' id='contact'>
           <h1 className='text-center p-4 bg-danger text-light rounded'>تواصل معنا</h1>
           <Container>
-            <div className='d-flex justify-content-evenly align-content-center align-items-center w-100 gap-1 flex-wrap'>
+            <div className='d-flex justify-content-center align-content-center align-items-center gap-1 w-100 flex-wrap'>
               <div className='mt-5'>
               <div class="mapswrapper"><iframe width="400" height="300" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=cairo&zoom=10&maptype=roadmap"></iframe></div>
               </div>
-              <div className='w-50 h-100'>
+              <div className='w-100 '>
                 <h1 className='text-end'>فروعنا</h1>
                 <ListGroup>
                   <ListGroup.Item className='text-end'>طنطا</ListGroup.Item>
