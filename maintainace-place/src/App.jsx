@@ -14,7 +14,7 @@ import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 import { FaPhone } from "react-icons/fa6";
 // 
-import img1 from './assets/service-maintenance-worker-repairing.jpg'
+import img1 from './assets/r.webp'
 import img2 from './assets/high-angle-man-working-as-plumber.jpg'
 import img3 from './assets/young-man-working-as-electrician-exposing-back-fridge-check-repair-it.jpg'
 // 
